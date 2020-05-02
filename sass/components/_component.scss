@@ -1,0 +1,85 @@
+.component {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: middle;
+    padding: $component-pad-horizontal $component-pad-vertical;
+    // background-color: white;
+
+    &__input {
+        width: calc((#{$main-cell-dimention} - (2 * #{$component-pad-horizontal})) - 2rem);
+        line-height: 5rem;
+        // border-radius: 5rem;
+
+        // background-color: orangered;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid #ffffff;
+        border-radius: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        // width: 75%;
+        color: #ffffff;
+
+        &[type="number"] {
+            -webkit-appearance: textfield;
+            -moz-appearance: textfield;
+            appearance: textfield;
+        }
+
+        &[type="number"]::-webkit-inner-spin-button,
+        &[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        &:invalid {
+            color: red;
+            // border-right: 2px solid var(--color__accent);
+        }
+
+        &__input:placeholder-shown {
+            border: 2px solid #ffffff;
+        }
+
+        &-box {
+            width: calc(#{$main-cell-dimention} - (2 * #{$component-pad-horizontal}));
+            padding: 0 1rem;
+        }
+    }
+
+    &__score {
+        display: block;
+        text-align: center;
+        padding: 0.6rem 0;
+        // background-color: darkblue;
+    }
+
+    &__icon {
+        // margin-right: -0.5rem;
+        line-height: 100%;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+// .inputfield {
+//     background-color: #73a53e;
+//     border: none;
+//     outline: none;
+//     border-bottom: 2px solid #33342d;
+//     text-align: center;
+//     font-size: 6em;
+//     width: 75%;
+//     color: #ffffff;
+// }
+
+// input:-webkit-autofill,
+// input:-webkit-autofill:hover,
+// input:-webkit-autofill:focus,
+// input:-webkit-autofill:active {
+//     -webkit-box-shadow: 0 0 0 30px #73a53e inset !important;
+// }
+
+// input:-webkit-autofill {
+//     -webkit-text-fill-color: #ffffff !important;
+// }
