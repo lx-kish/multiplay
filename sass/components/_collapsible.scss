@@ -1,0 +1,47 @@
+.collapsible {
+    position: relative;
+
+    transition: all 0.4s ease-in;
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__btn {
+        display: none;
+
+        &:checked ~ .collapsible__icon-box {
+            transform: rotate(180deg);
+        }
+
+        &:checked ~ .collapsible__part {
+            opacity: 1;
+            height: auto;
+        }
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+
+        &-box {
+            display: inline-block;
+            position: absolute;
+            right: 25rem;
+            top: 1.5rem;
+            height: 3rem;
+            width: 3rem;
+            fill: #ffffff;
+
+            transition: all 0.4s ease;
+        }
+    }
+
+    &__part {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+
+        transition: all 0.8s ease;
+    }
+}

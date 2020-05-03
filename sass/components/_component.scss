@@ -2,22 +2,25 @@
     display: inline-block;
     line-height: 100%;
     vertical-align: middle;
-    padding: $component-pad-horizontal $component-pad-vertical;
+    padding: $component-pad-vertical $component-pad-horizontal;
     // background-color: white;
 
     &__input {
-        width: calc((#{$main-cell-dimention} - (2 * #{$component-pad-horizontal})) - 2rem);
-        line-height: 5rem;
+
+        font-family: inherit;
+        width: calc(#{$main-cell-dimention} - (2 * #{$component-pad-horizontal}));
+        line-height: 6rem;
         // border-radius: 5rem;
 
         // background-color: orangered;
         background-color: transparent;
         border: none;
         outline: none;
-        border: 2px solid #ffffff;
+        border: 2px solid;
+        border-color: #ffffff;
         border-radius: 1rem;
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
         // width: 75%;
         color: #ffffff;
 
@@ -37,13 +40,15 @@
             // border-right: 2px solid var(--color__accent);
         }
 
-        &__input:placeholder-shown {
-            border: 2px solid #ffffff;
+        // &:focus,
+        &:not(:placeholder-shown), 
+        &:-webkit-autofill {
+            border-color: transparent;
         }
 
         &-box {
             width: calc(#{$main-cell-dimention} - (2 * #{$component-pad-horizontal}));
-            padding: 0 1rem;
+            // padding: 0 1rem;
         }
     }
 

@@ -1,5 +1,6 @@
 .tab {
-    margin: 5rem .5rem;
+    display: table;
+    margin: 5rem auto;
     padding: 0 .5rem;
 
     &__line {
@@ -10,7 +11,9 @@
         border-radius: 5rem;
 
         &--header {
-            display: inline-block;
+            display: table-row;
+            background-color: inherit;
+            border-bottom: .2rem solid #ffffff;
         }
     }
 
@@ -50,3 +53,12 @@
         }
     }
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: auto;
+    // background-color: #cf7346;
+    background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a); 
+
+  }

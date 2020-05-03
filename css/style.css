@@ -7,12 +7,11 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Orbitron', sans-serif;
   font-family: 'Lemonada', cursive; }
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(108, 180, 136, 0.986), #9f79f6); }
+  background-image: linear-gradient(#ee8f66, #cf7346); }
 
 footer,
 header,
@@ -21,9 +20,9 @@ section {
   display: block; }
 
 .one {
-  color: #565656;
-  fill: #565656;
-  border-color: #565656; }
+  color: #504935;
+  fill: #504935;
+  border-color: #504935; }
 
 .two {
   color: #ffe600;
@@ -31,24 +30,27 @@ section {
   border-color: #ffe600; }
 
 .three {
-  color: #f10f0f;
-  fill: #f10f0f;
-  border-color: #f10f0f; }
+  color: #fd2115;
+  fill: #fd2115;
+  border-color: #fd2115; }
 
 .four {
-  color: #ffe600;
-  fill: #ffe600;
-  border-color: #ffe600; }
+  color: #46877e;
+  fill: #46877e;
+  border-color: #46877e; }
 
 .five {
-  color: #1a47c3;
-  fill: #1a47c3;
-  border-color: #1a47c3; }
+  color: #0400ff;
+  fill: #0400ff;
+  border-color: #0400ff; }
 
 .six {
-  color: #ffe600;
-  fill: #ffe600;
-  border-color: #ffe600; }
+  color: #00d9ff;
+  fill: #00d9ff;
+  border-color: #00d9ff;
+  color: #0a79fd;
+  fill: #0a79fd;
+  border-color: #0a79fd; }
 
 .seven {
   color: #8f1b7b;
@@ -56,35 +58,67 @@ section {
   border-color: #8f1b7b; }
 
 .eight {
-  color: #ffe600;
-  fill: #ffe600;
-  border-color: #ffe600; }
+  color: #ff00aa;
+  fill: #ff00aa;
+  border-color: #ff00aa; }
 
 .nine {
-  color: #f56709;
-  fill: #f56709;
-  border-color: #f56709; }
+  color: #590504;
+  fill: #590504;
+  border-color: #590504; }
 
 .ten {
   color: #ffe600;
   fill: #ffe600;
   border-color: #ffe600; }
 
+.collapsible {
+  position: relative;
+  transition: all 0.4s ease-in; }
+  .collapsible__title {
+    display: inline-block; }
+  .collapsible__btn {
+    display: none; }
+    .collapsible__btn:checked ~ .collapsible__icon-box {
+      transform: rotate(180deg); }
+    .collapsible__btn:checked ~ .collapsible__part {
+      opacity: 1;
+      height: auto; }
+  .collapsible__icon {
+    height: 3rem;
+    width: 3rem; }
+    .collapsible__icon-box {
+      display: inline-block;
+      position: absolute;
+      right: 25rem;
+      top: 1.5rem;
+      height: 3rem;
+      width: 3rem;
+      fill: #ffffff;
+      transition: all 0.4s ease; }
+  .collapsible__part {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.8s ease; }
+
 .component {
   display: inline-block;
   line-height: 100%;
   vertical-align: middle;
-  padding: 1rem 1rem; }
+  padding: 0.5rem 1rem; }
   .component__input {
-    width: calc((9rem - (2 * 1rem)) - 2rem);
-    line-height: 5rem;
+    font-family: inherit;
+    width: calc(9rem - (2 * 1rem));
+    line-height: 6rem;
     background-color: transparent;
     border: none;
     outline: none;
-    border: 2px solid #ffffff;
+    border: 2px solid;
+    border-color: #ffffff;
     border-radius: 1rem;
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #ffffff; }
     .component__input[type="number"] {
       -webkit-appearance: textfield;
@@ -94,11 +128,10 @@ section {
       -webkit-appearance: none; }
     .component__input:invalid {
       color: red; }
-    .component__input__input:placeholder-shown {
-      border: 2px solid #ffffff; }
+    .component__input:not(:placeholder-shown), .component__input:-webkit-autofill {
+      border-color: transparent; }
     .component__input-box {
-      width: calc(9rem - (2 * 1rem));
-      padding: 0 1rem; }
+      width: calc(9rem - (2 * 1rem)); }
   .component__score {
     display: block;
     text-align: center;
@@ -109,7 +142,8 @@ section {
     height: 1rem; }
 
 .tab {
-  margin: 5rem .5rem;
+  display: table;
+  margin: 5rem auto;
   padding: 0 .5rem; }
   .tab__line {
     display: table-row;
@@ -117,7 +151,9 @@ section {
     border: 0.2rem solid;
     border-radius: 5rem; }
     .tab__line--header {
-      display: inline-block; }
+      display: table-row;
+      background-color: inherit;
+      border-bottom: .2rem solid #ffffff; }
   .tab__empty-cell {
     display: table-cell;
     text-align: center;
@@ -140,10 +176,16 @@ section {
     .tab__heading-cell--side {
       width: 6.5rem; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: auto;
+  background-image: linear-gradient(#ee8f66, #cf7346); }
+
 .footer__credentials {
   color: #fff;
   font-size: 1.6;
-  text-align: center; }
+  text-align: right; }
 
 .header {
   text-align: center;
@@ -152,6 +194,8 @@ section {
     font-size: 5rem;
     font-weight: 900;
     padding: 1rem 0; }
+    .header__title--small {
+      font-size: 2.2rem; }
   .header__hr {
     width: 60%;
     margin: .5rem auto; }
@@ -159,8 +203,6 @@ section {
     font-size: 1.6rem;
     font-weight: 300;
     padding: 1rem 10rem; }
-    .header__description--title {
-      font-size: 2.2rem; }
 
 .main {
   margin: 0 auto; }
