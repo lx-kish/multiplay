@@ -5,28 +5,49 @@ var stickyPoint;
 
 window.addEventListener('load', (event) => {
 
-    // initialBoot();
+    initialBoot();
 
     window.addEventListener('scroll', (event) => {
         stickElement("header-stick")
     });
+
+    var input = document.getElementById('collapsible-toggle');
+    input.addEventListener('click', (event) => {
+        initialBoot();
+    });
+
+    var inputNumber = document.querySelectorAll('input[type="number"]');
+
+    for (var i = 0; i < inputNumber.length; i++) {
+
+        inputNumber[i].addEventListener('keydown', (e) => {
+            if (e.which === 38 || e.which === 40) {
+                e.preventDefault();
+            }
+        });
+    }
+
+    // inputNumber.addEventListener('focus', (event) => {
+    //     this.addEventListener('keydown', (e) => {
+    //         if (e.which === 38 || e.which === 40) {
+    //             e.preventDefault();
+    //         }
+    //     });
+    // });
 });
 
-// function initialBoot() {
-//     // Get the header
-//     stickElem = document.getElementById("header-stick");
+function initialBoot() {
+    // Get the header
+    stickElem = document.getElementById("header-stick");
 
-//     // Get the offset position of the header
-//     stickyPoint = stickElem.offsetTop;
-// }
+    // Get the offset position of the header
+    stickyPoint = stickElem.offsetTop;
+}
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickElement(e) {
 
-    // Get the header
-    var stickElem = document.getElementById(e);
-    // Get the offset position of the header
-    var stickyPoint = stickElem.offsetTop;
+    // console.log(`Y offset = ${window.pageYOffset}, sticky point = ${stickyPoint}`);
 
     if (window.pageYOffset >= stickyPoint) {
         stickElem.classList.add("sticky")

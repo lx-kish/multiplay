@@ -1,30 +1,31 @@
 .tab {
     display: table;
     margin: 5rem auto;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
 
     &__line {
         display: table-row;
         height: $main-cell-dimention;
 
-        border: 0.2rem solid;
-        border-radius: 5rem;
+        // border: 0.2rem solid;
+        // border-radius: 5rem;
 
         &--header {
             display: table-row;
+            overflow: hidden;
             background-color: inherit;
-            border-bottom: .2rem solid #ffffff;
+            border-bottom: 0.2rem solid #ffffff;
         }
     }
 
     &__empty-cell {
         display: table-cell;
         text-align: center;
-        vertical-align: middle;;
+        vertical-align: middle;
         width: 2rem;
         // height: $main-cell-dimention;
 
-        padding: 6rem .2rem 0;
+        padding: 6rem 0.2rem 0;
         // padding: 2.6rem .2rem 0;
         line-height: 2rem;
         font-size: 2rem;
@@ -58,7 +59,10 @@
     position: fixed;
     top: 0;
     width: auto;
-    // background-color: #cf7346;
-    background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a); 
+    background-color: #ee8f66;
+    // background-image: linear-gradient(#ee8f66, #cf7346); // #fd7a3a);
 
-  }
+    & + .tab__line {
+        padding-top: $main-cell-dimention;
+      }
+}

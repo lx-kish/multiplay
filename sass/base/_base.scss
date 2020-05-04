@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+html, body {
+  height: 100%;
+  // overflow: hidden;
+}
+
 html {
     //defines how many px is 1rem
     font-size: 62.5%; //1rem = 10px (10px/16px = 62.5%)
@@ -17,8 +22,8 @@ html {
 
 body {
     box-sizing: border-box;
-    background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a); 
-    // color: #ffc4ab;
+    // background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a); 
+    background-color: #ee8f66;
     // color: #fd7a3a;
     // background-image: linear-gradient(#6cb488fb, #9f79f6);
 }

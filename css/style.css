@@ -5,13 +5,16 @@
   padding: 0;
   box-sizing: inherit; }
 
+html, body {
+  height: 100%; }
+
 html {
   font-size: 62.5%;
   font-family: 'Lemonada', cursive; }
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(#ee8f66, #cf7346); }
+  background-color: #ee8f66; }
 
 footer,
 header,
@@ -144,22 +147,21 @@ section {
 .tab {
   display: table;
   margin: 5rem auto;
-  padding: 0 .5rem; }
+  padding: 0 0.5rem; }
   .tab__line {
     display: table-row;
-    height: 9rem;
-    border: 0.2rem solid;
-    border-radius: 5rem; }
+    height: 9rem; }
     .tab__line--header {
       display: table-row;
+      overflow: hidden;
       background-color: inherit;
-      border-bottom: .2rem solid #ffffff; }
+      border-bottom: 0.2rem solid #ffffff; }
   .tab__empty-cell {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     width: 2rem;
-    padding: 6rem .2rem 0;
+    padding: 6rem 0.2rem 0;
     line-height: 2rem;
     font-size: 2rem;
     color: #ffffff; }
@@ -180,7 +182,9 @@ section {
   position: fixed;
   top: 0;
   width: auto;
-  background-image: linear-gradient(#ee8f66, #cf7346); }
+  background-color: #ee8f66; }
+  .sticky + .tab__line {
+    padding-top: 9rem; }
 
 .footer__credentials {
   color: #fff;
