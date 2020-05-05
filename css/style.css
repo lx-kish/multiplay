@@ -5,9 +5,6 @@
   padding: 0;
   box-sizing: inherit; }
 
-html, body {
-  height: 100%; }
-
 html {
   font-size: 62.5%;
   font-family: 'Lemonada', cursive; }
@@ -154,8 +151,9 @@ section {
     .tab__line--header {
       display: table-row;
       overflow: hidden;
-      background-color: inherit;
-      border-bottom: 0.2rem solid #ffffff; }
+      background-color: inherit; }
+    .tab__line--empty-stick {
+      display: none; }
   .tab__empty-cell {
     display: table-cell;
     text-align: center;
@@ -183,15 +181,17 @@ section {
   top: 0;
   width: auto;
   background-color: #ee8f66; }
-  .sticky + .tab__line {
-    padding-top: 9rem; }
+  .sticky + .tab__line--empty-stick {
+    display: table-row; }
 
 .footer__credentials {
+  margin: 0 auto;
   color: #fff;
   font-size: 1.6;
   text-align: right; }
 
 .header {
+  margin: 0 auto;
   text-align: center;
   color: #fff; }
   .header__title {

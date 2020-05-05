@@ -26,14 +26,6 @@ window.addEventListener('load', (event) => {
             }
         });
     }
-
-    // inputNumber.addEventListener('focus', (event) => {
-    //     this.addEventListener('keydown', (e) => {
-    //         if (e.which === 38 || e.which === 40) {
-    //             e.preventDefault();
-    //         }
-    //     });
-    // });
 });
 
 function initialBoot() {
