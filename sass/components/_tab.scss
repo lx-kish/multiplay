@@ -58,6 +58,7 @@
     top: 0;
     width: auto;
     background-color: $color-primary;
+    // overflow:scroll;
 
     & + .tab__line--empty-stick {
         display: table-row;

@@ -23,6 +23,14 @@ window.addEventListener('load', (event) => {
         inputNumber[i].addEventListener('keydown', (e) => {
             if (e.which === 38 || e.which === 40) {
                 e.preventDefault();
+            } else {
+                //number validation
+                // Use either which or keyCode, depending on browser support
+                var char = e.which || e.keyCode; 
+                if (!String.fromCharCode(char).match(/[0-9\.]/)) {
+                    // console.log(char);//target.value);
+                    return false;
+                }
             }
         });
     }
@@ -46,4 +54,4 @@ function stickElement(e) {
     } else {
         stickElem.classList.remove("sticky");
     }
-}ss
+}

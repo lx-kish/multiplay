@@ -1,0 +1,171 @@
+////////////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+/*
+possible $breakpoint arguments:
+-phone-small: 0 - 360px     ==> Phone small ???
+-phone:       360 - 600px   ==> Phone
+-tab-port:    600 - 900px   ==> Tablet portrait
+-tab-land:    900 - 1200px  ==> Tablet landscape
+[1200 - 1800] normal style
+-big-desktop: 1800+         ==> Big destop screens
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == _0-320 {
+        //phone-small {
+        @media only screen and (max-width: 20em) {
+            @content;
+        } //18.75em) { @content };
+    }
+
+    @if $breakpoint == _320-360 {
+        //phone-small {
+        @media only screen and (max-width: 22.5em) {
+            @content;
+        } //18.75em) { @content };
+    }
+
+    @if $breakpoint == _360-400 {
+        //phone {
+        @media only screen and (max-width: 25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _400-440 {
+        //phone {
+        @media only screen and (max-width: 27.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _440-480 {
+        //phone {
+        @media only screen and (max-width: 30em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _480-520 {
+        //phone {
+        @media only screen and (max-width: 32.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _520-560 {
+        //phone {
+        @media only screen and (max-width: 35em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _560-600 {
+        //phone {
+        @media only screen and (max-width: 37.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _600-640 {
+        //tab-port {
+        @media only screen and (max-width: 40em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _640-680 {
+        //tab-port {
+        @media only screen and (max-width: 42.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _680-720 {
+        //tab-port {
+        @media only screen and (max-width: 45em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _720-760 {
+        //tab-port {
+        @media only screen and (max-width: 47.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _760-800 {
+        //tab-port {
+        @media only screen and (max-width: 50em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _800-840 {
+        //tab-port {
+        @media only screen and (max-width: 52.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _840-880 {
+        //tab-port {
+        @media only screen and (max-width: 55em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _880-920 {
+        //tab-port {
+        @media only screen and (max-width: 57.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _920-960 {
+        //tab-port {
+        @media only screen and (max-width: 60em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _960-1000 {
+        //tab-port {
+        @media only screen and (max-width: 62.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _1000-1050 {
+        //tab-port {
+        @media only screen and (max-width: 65.625em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _1050-1100 {
+        //tab-port {
+        @media only screen and (max-width: 68.75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint == _1100-1200 {
+        //tab-land {
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+
+    // @if $breakpoint == big-desktop {
+    //     //big-desktop
+    //     @media only screen and (min-width: 112.5em) {
+    //         @content;
+    //     }
+    // }
+}

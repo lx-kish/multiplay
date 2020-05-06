@@ -12,20 +12,109 @@
 // }
 
 html {
-    //defines how many px is 1rem
-    font-size: 62.5%; //1rem = 10px (10px/16px = 62.5%)
+  //defines how many px is 1rem
+  font-size: 62.5%; //1rem = 10px (10px/16px = 62.5%)
 
-    // font-family: 'Orbitron', sans-serif;
-    font-family: 'Lemonada', cursive;
-    
+  // font-family: 'Orbitron', sans-serif;
+  font-family: "Lemonada", cursive;
+
+  //for correct calculations rem units in Safari
+  -webkit-text-size-adjust: none;
+
+  @include respond(_1100-1200) {
+    font-size: 56.25%; //1rem = 9px (9px/16px = 56.25%)
+  }
+
+  @include respond(_1050-1100) {
+    font-size: 55%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_1000-1050) {
+    font-size: 52.5%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_960-1000) {
+    font-size: 50%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_920-960) {
+    font-size: 48%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_880-920) {
+    font-size: 46%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_840-880) {
+    font-size: 44%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_800-840) {
+    font-size: 42%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_760-800) {
+    font-size: 40%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_720-760) {
+    font-size: 38%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_680-720) {
+    font-size: 36%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_640-680) {
+    font-size: 34%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_600-640) {
+    font-size: 32%; //1rem = 8px (8px/16px = 50%)
+  }
+
+  @include respond(_560-600) {
+    font-size: 31.25%; //1rem = 5px (5px/16px = 31.25%)
+  }
+
+  @include respond(_520-560) {
+    font-size: 28%; //1rem = 5px (5px/16px = 31.25%)
+  }
+
+  @include respond(_480-520) {
+    font-size: 26%; //1rem = 5px (5px/16px = 31.25%)
+  }
+
+  @include respond(_440-480) {
+    font-size: 24%; //1rem = 5px (5px/16px = 31.25%)
+  }
+
+  @include respond(_400-440) {
+    font-size: 22%; //1rem = 5px (5px/16px = 31.25%)
+  }
+
+  @include respond(_360-400) {
+    font-size: 20%; //1rem = 4px (4px/16px = 25%)
+    // font-size: 25%; //1rem = 4px (4px/16px = 25%)
+  }
+
+  @include respond(_320-360) {
+    font-size: 18%; //1rem = 4px (4px/16px = 25%)
+    // font-size: 25%; //1rem = 4px (4px/16px = 25%)
+  }
+
+  @include respond(_0-320) {
+    font-size: 16%; //1rem = 4px (4px/16px = 25%)
+    // font-size: 25%; //1rem = 4px (4px/16px = 25%)
+  }
 }
 
 body {
-    box-sizing: border-box;
-    // background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a); 
-    background-color: $color-primary;
-    // color: #fd7a3a;
-    // background-image: linear-gradient(#6cb488fb, #9f79f6);
+  box-sizing: border-box;
+  // background-image: linear-gradient(#ee8f66, #cf7346);// #fd7a3a);
+  background-color: $color-primary;
+  // color: #fd7a3a;
+  // background-image: linear-gradient(#6cb488fb, #9f79f6);
 }
 
 ////////////////////////////////////////////////
