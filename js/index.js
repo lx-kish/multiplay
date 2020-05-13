@@ -22,15 +22,22 @@ window.addEventListener('load', (event) => {
 
         inputNumber[i].addEventListener('keydown', (e) => {
             if (e.which === 38 || e.which === 40) {
+                /* arrows up & down
+                /* to prevent choosing right answer from keyboard 
+                /* */
                 e.preventDefault();
             } else {
-                //number validation
-                // Use either which or keyCode, depending on browser support
-                var char = e.which || e.keyCode; 
-                if (!String.fromCharCode(char).match(/[0-9\.]/)) {
-                    // console.log(char);//target.value);
-                    return false;
-                }
+
+                // // Use either which or keyCode, depending on browser support
+                // var char = e.which || e.keyCode;
+                // console.log(char);//target.value);
+                // console.log((e.which >= 48 && e.which <= 57));
+                // console.log(String.fromCharCode(char));//target.value);
+
+                return (e.which >= 48 && e.which <= 57) //numbers
+                    || e.which == 8  //backspace
+                    || e.which == 46 //delete
+                    || e.which == 9  //tab
             }
         });
     }
