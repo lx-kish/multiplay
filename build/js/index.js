@@ -31,6 +31,11 @@ window.addEventListener('load', (event) => {
     }
 });
 
+/**
+ * Validate an input field for the range of criteria
+ * @param  {event} e a fired event
+ * @return {boolean} validation state
+ */
 function fieldValidation(e) {
 
     var value = true;

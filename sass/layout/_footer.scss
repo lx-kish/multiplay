@@ -2,7 +2,14 @@
     &__credentials {
         margin: 0 auto;
         color: #fff;
-        font-size: 1.6;
+        font-size: $footer-font-size-main;
         text-align: right;
+    }
+
+    &__icon {
+        line-height: 100%;
+        width: $footer-font-size-main;
+        height: $footer-font-size-main;
+        vertical-align: middle;
     }
 }

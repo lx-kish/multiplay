@@ -147,6 +147,11 @@ section {
   fill: #ffe600;
   border-color: #ffe600; }
 
+.white {
+  color: #ffffff;
+  fill: #ffffff;
+  border-color: #ffffff; }
+
 .collapsible {
   position: relative;
   transition: all 0.4s ease-in; }
@@ -202,10 +207,7 @@ section {
       font-size: 3.5rem; }
       @media only screen and (max-width: 32.5em) {
         .component__input--hundreed {
-          font-size: 2rem; } }
-      @media only screen and (max-width: 22.5em) {
-        .component__input--hundreed {
-          font-size: 2rem; } }
+          font-size: 2.8rem; } }
     .component__input[type="number"] {
       -webkit-appearance: textfield;
       -moz-appearance: textfield;
@@ -277,8 +279,14 @@ section {
 .footer__credentials {
   margin: 0 auto;
   color: #fff;
-  font-size: 1.6;
+  font-size: 1.6rem;
   text-align: right; }
+
+.footer__icon {
+  line-height: 100%;
+  width: 1.6rem;
+  height: 1.6rem;
+  vertical-align: middle; }
 
 .header {
   margin: 0 auto;
