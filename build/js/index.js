@@ -104,7 +104,11 @@ function initialBoot() {
     stickyPoint = stickElem.offsetTop;
 }
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+/**
+ * Add the sticky class to the header when you reach
+ * its scroll position. Remove "sticky" when you
+ * leave the scroll position
+ */
 function stickElement(e) {
 
     // console.log(`Y offset = ${window.pageYOffset}, sticky point = ${stickyPoint}`);
