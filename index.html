@@ -1,0 +1,2668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Multiplication Table for Kids</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;645;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            Multiply me
+            <!-- <span class="one">M</span>
+            <span class="two">u</span>
+            <span class="three">l</span>
+            <span class="four">t</span>
+            <span class="five">i</span>
+            <span class="six">p</span>
+            <span class="seven">l</span>
+            <span class="eight">a</span>
+            <span class="nine">y</span> -->
+        </h1>
+        <h3 class="header__title--small">learn multiplication by addition</h3>
+        <div class="collapsible">
+            <hr class="header__hr">
+            <h3 class="collapsible__title header__title--small">How to use</h3>
+            <!-- <h3 class="header__title--small"></h3> -->
+
+            <input type="checkbox" class="collapsible__btn" id="collapsible-toggle">
+
+            <label for="collapsible-toggle" class="collapsible__icon-box">
+                <svg class="collapsible__icon">
+                    <use xlink:href="../img/sprite.svg#icon-chevron-down" />
+                </svg>
+            </label>
+            <div class="collapsible__part">
+                <hr class="header__hr">
+                <p class="header__description">
+                    - Add the amount of dots under the field to the number from the left.<br>
+                    - Write an answer at the field above.<br>
+                    - Right answer colors <b>white</b>.<br>
+                    - Wrong answer colors <span class="three"><b>red</b></span>.<br>
+                    - Move to the next field and repeate.
+                </p>
+            </div>
+            <hr class="header__hr">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="tab">
+            <div class="tab__line--header" id="header-stick">
+                <div class="tab__heading-cell tab__heading-cell--side">&nbsp;</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell two">2</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell three">3</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell four">4</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell five">5</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell six">6</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell seven">7</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell eight">8</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell nine">9</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell ten">10</div>
+                <div class="tab__heading-cell tab__heading-cell--side">&nbsp;</div>
+            </div>
+            <div class="tab__line--empty-stick">
+                <div class="tab__heading-cell tab__heading-cell--side">&nbsp;</div>
+            </div>
+            <!-- <div class="tab__movable"> -->
+            <div class="tab__line two">
+                <div class="tab__heading-cell tab__heading-cell--side two">2</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="4" max="4" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="6" max="6" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="8" max="8" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="10" max="10" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="12" max="12" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="14" max="14" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="16" max="16" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="18" max="18" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="20" max="20" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side two">2</div>
+            </div>
+            <div class="tab__line three">
+                <div class="tab__heading-cell tab__heading-cell--side three">3</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="6" max="6" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="9" max="9" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="12" max="12" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="15" max="15" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="18" max="18" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="21" max="21" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="24" max="24" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="27" max="27" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="30" max="30" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side three">3</div>
+            </div>
+            <div class="tab__line four">
+                <div class="tab__heading-cell tab__heading-cell--side four">4</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="8" max="8" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="12" max="12" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="16" max="16" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="20" max="20" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="24" max="24" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="28" max="28" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="32" max="32" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="36" max="36" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="40" max="40" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side four">4</div>
+            </div>
+            <div class="tab__line five">
+                <div class="tab__heading-cell tab__heading-cell--side five">5</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="10" max="10" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="15" max="15" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="20" max="20" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="25" max="25" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="30" max="30" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="35" max="35" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="40" max="40" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="45" max="45" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="50" max="50" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side five">5</div>
+            </div>
+            <div class="tab__line six">
+                <div class="tab__heading-cell tab__heading-cell--side six">6</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="12" max="12" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="18" max="18" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="24" max="24" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="30" max="30" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="36" max="36" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="42" max="42" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="48" max="48" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="54" max="54" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="60" max="60" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side six">6</div>
+            </div>
+            <div class="tab__line seven">
+                <div class="tab__heading-cell tab__heading-cell--side seven">7</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="14" max="14" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="21" max="21" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="28" max="28" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="35" max="35" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="42" max="42" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="49" max="49" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="56" max="56" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="63" max="63" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="70" max="70" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side seven">7</div>
+            </div>
+            <div class="tab__line eight">
+                <div class="tab__heading-cell tab__heading-cell--side eight">8</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="16" max="16" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="24" max="24" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="32" max="32" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="40" max="40" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="48" max="48" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="56" max="56" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="64" max="64" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="72" max="72" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="80" max="80" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side eight">8</div>
+            </div>
+            <div class="tab__line nine">
+                <div class="tab__heading-cell tab__heading-cell--side nine">9</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="18" max="18" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="27" max="27" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="36" max="36" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="45" max="45" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="54" max="54" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="63" max="63" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="72" max="72" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="81" max="81" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="90" max="90" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side nine">9</div>
+            </div>
+            <div class="tab__line ten">
+                <div class="tab__heading-cell tab__heading-cell--side ten">10</div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="20" max="20" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="30" max="30" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="40" max="40" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="50" max="50" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="60" max="60" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="70" max="70" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="80" max="80" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric" class="component__input"
+                            placeholder=" " min="90" max="90" step="1"></input>
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__empty-cell">&#10010;</div>
+                <div class="component">
+                    <div class="component__input-box">
+                        <input type="number" pattern="[0-9]*" inputmode="numeric"
+                            class="component__input component__input--hundreed" placeholder=" " min="100" max="100"
+                            step="1">
+                    </div>
+                    <div class="component__score">
+                        <div class="component__score-row">
+                            <svg class="component__icon one">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon two">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon three">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon four">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon five">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                        <div class="component__score-row">
+                            <svg class="component__icon six">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon seven">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon eight">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon nine">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                            <svg class="component__icon ten">
+                                <use xlink:href="../img/sprite.svg#icon-circle" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__heading-cell tab__heading-cell--side ten">10</div>
+            </div>
+            <div class="tab__line--header">
+                <div class="tab__heading-cell tab__heading-cell--side">&nbsp;</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell two">2</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell three">3</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell four">4</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell five">5</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell six">6</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell seven">7</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell eight">8</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell nine">9</div>
+                <div class="tab__empty-cell tab__empty-cell--head">&#10010;</div>
+                <div class="tab__heading-cell ten">10</div>
+                <div class="tab__heading-cell tab__heading-cell--side">&nbsp;</div>
+            </div>
+            <!-- </div> -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__credentials">
+            Built with
+            <span class="footer__icon-box">
+                <svg class="footer__icon three">
+                    <use xlink:href="../img/sprite.svg#icon-heart" />
+                </svg>
+            </span>
+            by 
+            <span class="footer__icon-box">
+                <svg class="footer__icon white">
+                    <use xlink:href="../img/sprite.svg#icon-lx-logo" />
+                </svg>
+            </span>
+            Alexander Kish 
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
